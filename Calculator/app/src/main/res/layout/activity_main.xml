@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.starklabs.calculator.MainActivity">
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:hint="Enter a number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnSquare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Square" />
+
+    <Button
+        android:id="@+id/btnSquareRoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSquare"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Square Root" />
+
+    <Button
+        android:id="@+id/btnCube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSquare"
+        android:layout_alignStart="@+id/btnSquare"
+        android:layout_below="@+id/btnSquareRoot"
+        android:layout_marginTop="22dp"
+        android:text="Cube" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="250px"
+        android:layout_height="50px"
+        android:layout_below="@+id/etNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnEO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCube"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Even Odd" />
+
+</RelativeLayout>
