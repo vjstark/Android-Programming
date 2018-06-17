@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.starklabs.flightreview.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rgAirline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbAirIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:padding="10dp"
+            android:text="Air India"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbVistara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Vistara"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbIndigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Indigo"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbEmirates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:layout_weight="1"
+            android:text="Emirates"
+            android:textSize="20sp" />
+
+        <RatingBar
+            android:id="@+id/rabRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:layout_weight="1"
+            android:numStars="5"
+            android:rating="3.0"
+            android:stepSize="0.5" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Submit Rating" />
+    </RadioGroup>
+</LinearLayout>
