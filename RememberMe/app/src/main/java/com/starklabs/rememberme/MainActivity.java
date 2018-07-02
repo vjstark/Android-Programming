@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         etName = (EditText)findViewById(R.id.etName);
         btnSave = (Button)findViewById(R.id.btnSave);
-        sp = getSharedPreferences("p1",MODE_PRIVATE);
+        sp = getSharedPreferences("pe1",MODE_PRIVATE);
 
         String n = sp.getString("n", "");
         if(n.length() != 0){
