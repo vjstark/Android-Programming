@@ -34,11 +34,13 @@ public class MainActivity extends AppCompatActivity {
         etName = (EditText)findViewById(R.id.etName);
         etAge = (EditText)findViewById(R.id.etAge);
         etPhoneNumber = (EditText)findViewById(R.id.etPhoneNumber);
-        rgGender = (RadioGroup)findViewById(R.id.rgGender);
-        rbMale = (RadioButton)findViewById(R.id.rbGenderm);
-        rbFemale = (RadioButton)findViewById(R.id.rbGenderf);
+
         btnRegister = (Button)findViewById(R.id.btnRegister);
         sp = getSharedPreferences("n1",MODE_PRIVATE);
+
+        rgGender = (RadioGroup)findViewById(R.id.rgGender);
+        rbMale = (RadioButton)findViewById(R.id.rbMale);
+        rbFemale = (RadioButton)findViewById(R.id.rbFemale);
 
         //first Page: Personal Details
         String n = sp.getString("n","");
@@ -68,22 +70,23 @@ public class MainActivity extends AppCompatActivity {
                         return;
                     }
 
+                    //take radio button data
                     int id = rgGender.getCheckedRadioButtonId();
-                    RadioGroup rb = rgGender.findViewById(id);
-                    ;
+                    RadioButton rb = rgGender.findViewById(id);
+
+
+
                     //send name to Welcome "name"
-//                    SharedPreferences.Editor editor = sp.edit();
-//                    editor.putString("n",n);
-//                    Intent i = new Intent(MainActivity.this,WelcomeActivity.class);
-//                    editor.commit();
-//                    startActivity(i);
-//                    finish();
+                    SharedPreferences.Editor editor = sp.edit();
+                    editor.putString("n",n);
+                    Intent i = new Intent(MainActivity.this,BMIActivity.class);
+                    editor.commit();
+                    startActivity(i);
+                    finish();
                 }
+
+
             });
-
-
-
-
 
 //            btnSubmit.setOnClickListener(new View.OnClickListener() {
 //                @Override
