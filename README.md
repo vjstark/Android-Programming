@@ -1,2 +1,2 @@
 # Android-Studio-Projects
-Proof of Conceept Applications created to learn Android Studio
+Proof of Concept Applications created to learn Android Studio
